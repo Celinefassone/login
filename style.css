@@ -2,6 +2,16 @@
   margin: 20px;
 }
 
+/*
+  30% Width will then shrink with the screen. Why not use a fixed width for desktop
+  and 100% width for mobile?
+
+  Use this to center elements which have a width specified
+  margin: 0 auto;
+
+  Remove text-align: center from the parents and use it only in the child
+*/
+
 .body-center {
   width: 30%;
   text-align: center;
@@ -9,6 +19,7 @@
   padding-top: 8%;
 }
 
+/* Use borders here and not outlines */
 .body-outline {
   outline: #ad47ee;
   outline-style: solid;
@@ -17,6 +28,7 @@
   border-radius: 3px;
 }
 
+/* Keep padding and margin declaration to a single line clockwise 0 0 0 0 */
 .header {
   padding-top: 25px;
   padding-bottom: 25px;
@@ -24,6 +36,7 @@
   font-family: sans-serif;
 }
 
+/* Consolidate border declaration to a single line border-bottom: 1px solid rgb(58, 58, 58); */
 .input {
   border: none;
   border-bottom: 1px solid;
