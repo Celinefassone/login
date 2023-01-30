@@ -10,41 +10,41 @@
 
   <body class="body-margin">
     <div class="body-center">
-      <div class="body-outline">
-        <!-- no unnecessary containers -->
-        <div>
-          <header class="header">
-            <h1>Login</h1>
-          </header>
-        </div>
+      <div class="body-border">
+        <header class="header">
+          <!-- done no unnecessary containers -->
+          <h1>Login</h1>
+        </header>
         <!-- look in to the form elements including fieldset, label and form with action attribute -->
-        <form action="#">
-          <div class="username">
-            <div class="username-and-password">Username</div>
+        <form class="form-center" action="#">
+          <div>
+            <label class="username-and-password">Username</label>
             <input
               class="input"
               type="text"
               name="username"
               id="username"
-              placeholder="Can be something fun"
+              placeholder="Type your username"
             />
           </div>
-          <div class="password">
-            <div class="username-and-password">Password</div>
+          <div>
+            <label class="username-and-password">Password</label>
             <input
               class="input"
               type="text"
               name="passoword"
               id="password"
-              placeholder="But don't tell anyone"
+              placeholder="Type your password"
             />
             <p class="forgot-password">
               <a href="#">Forgot password?</a>
             </p>
           </div>
           <div>
-            <!-- change this to a type="submit" and read about this -->
-            <button class="button" type="text" id="btn">LOGIN</button>
+            <!-- done change this to a type="submit" and read about this -->
+            <button class="button" type="submit" id="btn">
+              <a class="button-color" href="#"> LOGIN</a>
+            </button>
           </div>
         </form>
       </div>
