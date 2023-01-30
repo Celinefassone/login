@@ -16,7 +16,7 @@
           <h1>Login</h1>
         </header>
         <!-- look in to the form elements including fieldset, label and form with action attribute -->
-        <form class="form-center" action="#">
+        <form class="form-center" action="#" id="form">
           <div>
             <label class="username-and-password">Username</label>
             <input
@@ -31,18 +31,20 @@
             <label class="username-and-password">Password</label>
             <input
               class="input"
-              type="text"
-              name="passoword"
+              type="password"
+              name="password"
               id="password"
               placeholder="Type your password"
             />
+
             <p class="forgot-password">
               <a href="#">Forgot password?</a>
             </p>
+            <input type="checkbox" name="checkbox" id="checkbox" />
           </div>
           <div>
             <!-- done change this to a type="submit" and read about this -->
-            <button class="button" type="submit" id="btn">
+            <button class="button" type="button" id="btn">
               <a class="button-color" href="#"> LOGIN</a>
             </button>
           </div>
