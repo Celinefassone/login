@@ -1,0 +1,16 @@
+.list {
+  display: flex;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 0 10px 10px 0;
+  color: white;
+  font-size: 50px;
+}
