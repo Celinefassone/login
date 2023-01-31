@@ -1,12 +1,27 @@
 document.addEventListener("DOMContentLoaded", function () {
   const myButton = document.querySelector("#btn");
-  let form = document.querySelector("#form");
+  const form = document.querySelector("#form");
+  const checkbox = document.querySelector("#checkbox");
+
+  let isValid = false;
 
   if (myButton) {
     myButton.addEventListener("click", function () {
-      console.log(form.password.value);
-      console.log(form.username.value);
-      console.log(form.checkbox.value);
+      if (
+        form.username.value.length > 0 &&
+        form.password.value.length > 0 &&
+        checkbox.checked
+      ) {
+        isValid = true;
+      } else {
+        isValid = false;
+      }
+
+      if (isValid) {
+        alert("The form is valid");
+      } else {
+        alert("The form is INVALID");
+      }
     });
   }
 });
